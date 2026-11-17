@@ -1,0 +1,46 @@
+# Python virtual environments & bytecode
+.venv/
+venv/
+ENV/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyd
+.pytest_cache/
+.coverage
+
+# Frontend dependencies & builds
+frontend/node_modules/
+node_modules/
+frontend/.next/
+.next/
+frontend/out/
+out/
+build/
+dist/
+*.tsbuildinfo
+next-env.d.ts
+
+# Environment variables & secrets
+.env*
+!.env.example
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# IDE & Editor configs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Explicitly track 7-year historical SQLite database
+!data/indices.db
