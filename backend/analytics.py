@@ -61,7 +61,7 @@ def load_index_df(slug: str, db_path: Union[str, Path] = DEFAULT_DB_PATH) -> pd.
 
 
 def get_index_analysis(slug: str, db_path: Union[str, Path] = DEFAULT_DB_PATH) -> Dict[str, Any]:
-    """Compute all IndexPE valuation, earnings, forward return, and strategy metrics for slug."""
+    """Compute all NiftyVal valuation, earnings, forward return, and strategy metrics for slug."""
     if slug not in INDICES:
         raise ValueError(f"Unknown index slug '{slug}'. Must be one of {list(INDICES.keys())}")
 
@@ -269,7 +269,7 @@ def get_basket_summary(db_path: Union[str, Path] = DEFAULT_DB_PATH) -> List[Dict
 
 if __name__ == "__main__":
     print("\n" + "=" * 115)
-    print("INDEXPE BASKET SUMMARY (SORTED BY 5Y P/E PERCENTILE)")
+    print("NIFTYVAL BASKET SUMMARY (SORTED BY 5Y P/E PERCENTILE)")
     print("=" * 115)
 
     basket = get_basket_summary()

@@ -29,7 +29,7 @@ from backend.analytics import (
 from backend.fetcher import DB_PATH, sync_all
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(name)s: %(message)s")
-logger = logging.getLogger("indexpe.api")
+logger = logging.getLogger("niftyval.api")
 
 # IST Timezone (+05:30)
 IST = datetime.timezone(datetime.timedelta(hours=5, minutes=30))
@@ -145,8 +145,8 @@ async def lifespan(app: FastAPI):
 
 
 app = FastAPI(
-    title="IndexPE API",
-    description="Backend API exposing official NSE index valuations, forward return distributions, and ETF strategy signals for IndexPE frontend.",
+    title="NiftyVal Analytics API",
+    description="Backend API exposing official NSE index valuations, forward return distributions, and ETF analytics for NiftyVal frontend.",
     version="1.0.0",
     lifespan=lifespan,
 )

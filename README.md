@@ -1,12 +1,12 @@
-# IndexPE Workstation — Sectoral Valuation & ETF Analytics Engine
+# NiftyVal — NSE Sectoral Valuation & ETF Analytics Workstation
 
-A production-grade quantitative valuation terminal and ETF portfolio analytics engine inspired by [IndexPE](https://www.indexpe.in). Built with **FastAPI**, **SQLite**, **Next.js 16 (App Router)**, **TypeScript**, **Tailwind CSS**, and **Recharts**.
+A production-grade quantitative valuation terminal and ETF portfolio analytics engine for the National Stock Exchange of India (NSE). Built with **FastAPI**, **SQLite**, **Next.js 16 (App Router)**, **TypeScript**, **Tailwind CSS**, and **Recharts**.
 
 ---
 
 ## 📌 Overview
 
-IndexPE Workstation tracks, analyzes, and screens valuation multiples across India's National Stock Exchange (NSE) sectoral and broad-market indices. It equips long-term investors and ETF allocators with historical rolling medians, percentile spectrums, 52-week price channels, pairwise return correlations, and forward return distributions—eliminating recency bias and emotional timing.
+**NiftyVal** tracks, analyzes, and screens valuation multiples across India's NSE sectoral and broad-market indices. It equips long-term investors and ETF allocators with historical rolling medians, percentile spectrums, 52-week price channels, pairwise return correlations, and forward return distributions—eliminating recency bias and emotional timing.
 
 The workstation comes pre-packaged with a **7-year daily historical dataset** (~1.9 MB SQLite database in `data/indices.db`) covering official NSE closing levels, P/E, P/B, Dividend Yield, and implied earnings per share ($EPS = \frac{\text{Close}}{\text{P/E}}$).
 
@@ -81,7 +81,7 @@ The workstation comes pre-packaged with a **7-year daily historical dataset** (~
 ## 🛠️ Tech Stack & Architecture
 
 ```
-indexpe-clone/
+NiftyVal/
 ├── backend/
 │   ├── api.py            # FastAPI REST application + Lifespan auto-sync + CORS
 │   ├── analytics.py      # Statistical analytics, rolling medians, CAGR, forward returns
@@ -121,8 +121,8 @@ indexpe-clone/
 
 ### Step 1: Clone the Repository
 ```bash
-git clone https://github.com/Asceptic07/indexpe-clone.git
-cd indexpe-clone
+git clone https://github.com/Asceptic07/NiftyVal.git
+cd NiftyVal
 ```
 
 ---

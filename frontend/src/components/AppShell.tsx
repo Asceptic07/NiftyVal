@@ -92,11 +92,11 @@ function AppShellInner({ children }: AppShellProps) {
         <div className="flex items-center justify-between h-14 px-4 border-b border-[rgba(119,124,124,0.2)]">
           <Link href="/baskets" className="flex items-center gap-2.5 overflow-hidden">
             <div className="w-8 h-8 rounded-lg bg-[rgba(50,184,198,0.15)] border border-[#32b8c6] flex items-center justify-center shrink-0">
-              <span className="font-bold text-[#32b8c6] text-sm">PE</span>
+              <span className="font-bold text-[#32b8c6] text-sm">NV</span>
             </div>
             {!collapsed && (
               <span className="font-bold text-lg tracking-tight text-white">
-                Index<span className="text-[#32b8c6]">PE</span>
+                Nifty<span className="text-[#32b8c6]">Val</span>
               </span>
             )}
           </Link>
@@ -190,7 +190,7 @@ function AppShellInner({ children }: AppShellProps) {
           {/* Breadcrumb / Section Header */}
           <div className="flex items-center gap-3">
             <span className="text-xs font-semibold tracking-wider uppercase text-[#a7a9a9]">
-              IndexPE Workstation
+              NiftyVal Workstation
             </span>
             <span className="text-sm text-[#777c7c]">/</span>
             <span className="text-sm font-medium text-white capitalize">

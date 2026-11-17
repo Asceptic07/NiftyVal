@@ -28,7 +28,7 @@ from backend.analytics import (
 # Streamlit Page Config
 # -----------------------------------------------------------------------------
 st.set_page_config(
-    page_title="IndexPE - Sectoral Valuation & ETF Strategy Engine",
+    page_title="NiftyVal - Sectoral Valuation & ETF Analytics Engine",
     page_icon="📈",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -148,7 +148,7 @@ def check_db_status():
 # Sidebar
 # -----------------------------------------------------------------------------
 with st.sidebar:
-    st.title("IndexPE")
+    st.title("NiftyVal")
     st.caption("Sectoral Valuation & ETF Allocation Engine")
     st.markdown("---")
 

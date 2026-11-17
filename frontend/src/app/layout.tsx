@@ -3,8 +3,8 @@ import "./globals.css";
 import AppShell from "@/components/AppShell";
 
 export const metadata: Metadata = {
-  title: "IndexPE - Sectoral Valuation & ETF Decision Engine",
-  description: "Live historical valuation percentiles, earnings CAGR, and ETF strategy signals strictly based on official NSE data.",
+  title: "NiftyVal — NSE Sectoral Valuation & ETF Analytics",
+  description: "Live historical valuation percentiles, multi-window rolling medians, implied EPS dynamics, and ETF analytics strictly based on official NSE data.",
 };
 
 export default function RootLayout({
